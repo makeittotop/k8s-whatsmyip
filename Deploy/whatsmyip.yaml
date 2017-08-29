@@ -19,7 +19,7 @@ kind: Deployment
 metadata:
   name: whatsmyip
 spec:
-  replicas: 1
+  replicas: 4
   template:
     metadata:
       labels:
@@ -37,4 +37,4 @@ spec:
           - name: POD_IP
             valueFrom:
               fieldRef:
-                fieldPath: status.podIP 
+                fieldPath: status.podIP
